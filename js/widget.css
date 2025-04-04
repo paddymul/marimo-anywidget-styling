@@ -1,11 +1,20 @@
 body {
   --ag-legacy-styles-loaded: "true";
 }
-
+span.ag-icon-asc {
+    color:brown !important;
+    border: 2px solid purple;
+}
+/*
+.ag-theme-alpine-dark {
+    border:3px solid pink;
+}
+*/
 .ag-icon {
   font-family: var(--ag-icon-font-family);
   font-weight: var(--ag-icon-font-weight);
   color: var(--ag-icon-font-color);
+  color:black;
   font-size: var(--ag-icon-size);
   line-height: var(--ag-icon-size);
   font-style: normal;
@@ -28,7 +37,7 @@ body {
   position: absolute;
   inset: 0;
   content: "";
-}
+ }
 
 .ag-icon-asc {
   font-family: var(--ag-icon-font-family-asc, var(--ag-icon-font-family));
@@ -50,7 +59,7 @@ body {
 [class*=ag-theme-] {
   --ag-icon-size: 12px;
   --ag-icon-font-weight: normal;
-  --ag-icon-font-color: var(--ag-foreground-color);
+  /* --ag-icon-font-color: var(--ag-foreground-color); */
   --ag-icon-image-display: block;
 }
 
@@ -67,7 +76,10 @@ body {
 
 .ag-theme-alpine-dark {
   --ag-background-color: #181d1f;
-  --ag-foreground-color: #fff;
+  /*  --ag-foreground-color: #fff; */
+  --ag-foreground-color: green;
+  --ag-icon-font-color: purple;
+  --ag-icon-font-color-asc: orange;
   color-scheme: dark;
 }
 
